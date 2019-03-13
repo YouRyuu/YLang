@@ -28,7 +28,7 @@ MOVSX:进行符号扩展->
       .code  
       main proc  
       mov eax, xval  
-      neg eax  
+      neg eax ;转为补码再取反  
       mov ebx, yval
       sub ebx, zval
       add eax, ebx
